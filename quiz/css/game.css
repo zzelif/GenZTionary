@@ -1,0 +1,98 @@
+/* QUESTIONS */
+
+
+:root {
+  /* Blue gradient */
+--body-color: linear-gradient(90deg, hsl(204, 28%, 40%) 0%, hsl(158, 28%, 40%) 100%);
+--container-color: linear-gradient(136deg, hsl(204, 28%, 35%) 0%, hsl(158, 28%, 35%) 100%);
+}
+
+body{
+  background: var(--body-color);
+}
+
+h1 {
+  color: #00fbff;
+}
+
+h2 {
+  color: white; 
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.25);
+  background-color: rgb(255, 255, 255);
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: var(--container-color);
+  color: rgb(107, 0, 0);
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.score-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #ffffff;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #00fbff;
+  width: 0%;
+}
+
+.score-prefix {
+  text-align: right;
+  font-size: 2rem;
+}
+
+#score {
+  text-align: right;
+}
+
+
+
+
